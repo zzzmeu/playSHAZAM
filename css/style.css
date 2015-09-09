@@ -36,6 +36,97 @@ max-width:300px;
 overflow: hidden;
 }
 
+
+#disclaimer{
+height:600px;
+max-width:640px;
+margin:0px auto;
+padding-top:30px;
+}
+
+#disclaimer p{
+font-size:35px;
+text-align:center;
+color:#fff;
+font-weight:bold;
+margin-top:40px;
+text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);   
+}
+
+#maintoggle{
+margin-top:40px;
+height:80px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;   
+-webkit-box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.45);
+box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.45);    
+}
+
+#maintoggle ul{
+list-style:none;
+width:85%;
+background:#202020;
+float:left;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px; 
+    
+}
+
+#maintoggle li{
+float:left;
+}
+
+#maintoggle li:first-child{ 
+font-size:20px;
+font-weight:bold;
+color:#fff;
+padding:26px;
+padding-left:10px;
+}
+
+#maintoggle select{
+background:#111;
+color:#fff;
+font-size:20px;
+font-weight:bold;
+margin-top:16px;
+padding:10px 70px 10px 10px;
+}
+
+#mainbutton{
+background:#0095E8;
+width:15%;
+height:80px;  
+float:left;
+padding:26px 0px 0px 15px;
+font-size:20px;
+color:#fff;
+font-weight:bold;
+-webkit-border-top-right-radius: 10px;
+-webkit-border-bottom-right-radius: 10px;
+-moz-border-radius-topright: 10px;
+-moz-border-radius-bottomright: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;        
+}
+
+#mainbutton:hover{
+cursor:pointer;
+background:#009DF5;
+}
+
+
+
+#player-holder{
+display:none;
+}
+
 #player{
 max-width:900px;
 margin:0px auto;
@@ -105,6 +196,10 @@ background:#343434 url(/img/next.png) no-repeat center;
 cursor:pointer;
 }
 
+#mid{
+display:none;
+}
+
 #tracklistinfo{
 max-width:900px;
 height:50px;
@@ -114,7 +209,6 @@ margin-bottom:20px;
 
 #upnext{
 height:50px;
-
 background: #141414;
 font-size:24px;
 font-weight:bold;
@@ -130,6 +224,7 @@ font-weight:bold;
 color:#fff;
 padding:13px;
 float:right;
+height:50px;
 }
 
 #toggle ul{
@@ -289,6 +384,39 @@ padding-top:14px;
     .trackposition{
     font-size:20px;
     margin-top:27px;
+    }
+
+    
+    #maintoggle ul{
+    width:100%!important;
+    height:auto;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;    
+    }
+    
+    #maintoggle select{
+    padding:10px;
+    margin-left:-20px;
+    margin-bottom:20px;
+    margin-top:18px;
+    }
+    
+    #disclaimer{
+    width:80%;
+    }
+    
+    #disclaimer p{
+    font-size:20px;
+    }
+    
+    #mainbutton{
+    clear:left;
+    width:100%;
+    text-align: center;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;    
     }
     
 
