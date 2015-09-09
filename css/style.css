@@ -124,18 +124,18 @@ float:left;
 }
 
 #toggle{
-height:50px;
 background: #141414;
 font-size:18px;
 font-weight:bold;
 color:#fff;
-padding:13px 13px 13px 13px;
+padding:13px;
 float:right;
 }
 
 #toggle ul{
 list-style:none;
 padding:0px;
+
 }
 
 #toggle ul li{
@@ -147,9 +147,18 @@ margin-right:20px;
 }
 
 #toggle select{
-background:#141414;
+background:#333;
 font-size:18px;
+
+   width: 160px;
+   font-size: 17px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 28px;
+   margin-top:-6px;
 }
+
 
 #tracklist{
 list-style:none;    
@@ -227,40 +236,147 @@ background:#666;
 cursor:pointer;
 }
 
+#foot{
+width:100%;
+height:50px;
+background:#141414;
+}
+
+#foot-inner{
+color:#333;
+font-weight:bold;
+padding-top:14px;
+}
+
+
+
 
 @media screen and (max-width: 600px) {
+        
     #upnext{
         display:none;
     }
     
     #toggle{
-    margin-top:0px;     
+    padding-top:24px;     
     clear: right;
     width:100%;
-    border-top:10px solid #ccc;
-    height:100%;
-    margin-top:0px;
+    height:100px;
+    border-top:4px solid #333;
+    border-bottom:4px solid #333;
+    margin-top:-15px;
+    }
+    
+    #tracklist li{
+    border-left:8px solid #0095E8;
+    }
+    
+    .trackpic{
+    display:none;
     }
     
     .trackinfo{
     font-size:12px;
+    max-width:300px;
+    height:40px;
+    overflow:hidden;
     }
 
     .trackinfo p{
-    font-size:15px;
+    font-size:15px;  
+    }
+    
+    .trackposition{
+    font-size:20px;
+    margin-top:27px;
     }
     
 
     
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     #trackinfo {
-        display:none;
+        font-size:15px;
+        max-width:390px;
+        height:40px!important;
+        margin-top:2px;
+        overflow:hidden;
     }
     
    
 }
+
+
+
+@media screen and (max-width: 420px) {
+    #trackinfo {
+        font-size:16px;
+        max-width:170px;
+        height:40px!important;
+        height:40px;
+        overflow: hidden;
+    }
+    
+    .trackinfo{
+    max-width:190px;
+    }
+    
+  
+    
+    .trackplay {
+    width:75px;
+    margin-top:5px;
+    }
+    
+    .trackposition{
+    font-size:19px;
+    }
+    
+   
+}
+
+@media screen and (max-width: 330px) {
+    
+   #toggle ul li:first-child{
+margin-right:20px;
+margin-bottom:10px;
+}
+
+#toggle ul li:last-child{ 
+padding-bottom:20px!important;
+}
+    
+ #tracklist li{
+    height:80px;
+    }
+    
+ .trackinfo{
+    max-width:190px!important;
+    margin-left:2px;
+    }
+    
+  
+    
+    .trackplay {
+    width:65px;
+    margin:0;
+    height:65px;!important
+    }
+    
+    .trackposition{
+    font-size:15px;
+    margin-top:24px;
+    margin-right:2px;
+    margin-left:5px;
+    }
+
+    
+   
+}
+
+
+
 
 
 
